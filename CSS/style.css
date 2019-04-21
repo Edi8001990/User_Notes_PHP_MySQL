@@ -1,0 +1,256 @@
+a {color: white;
+   text-decoration:none; 
+    
+}
+
+#header{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+body{
+    background-color: #336699; 
+   
+}
+
+
+/* Forms styling */
+
+
+.form-content{
+    display: inline-block;    
+    margin-left:5px;
+    margin-right:5px;
+    width:30%; 
+    top:50px;
+    background-color: #eaeaea;  
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.form-note{
+    margin-left:auto;
+    margin-right:auto;
+    width:50%; 
+    top:50px;
+    background-color: #eaeaea;  
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+#main-index{
+    text-align: center;
+    
+}
+
+#main-note{
+    text-align: center;
+    
+}
+    
+ 
+ .form-input{
+    padding: 12px 12px 12px 12px;
+ }
+
+
+.form-text{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #666666; 
+    float:left; 
+}
+
+.row-box{
+    padding:15px; 
+}
+
+
+
+.login, .password, .note{
+    width:100%;
+    padding: 15px 10px 15px 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666666; 
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgb(234, 234, 234);
+    -moz-box-shadow: inset 0px 0px 15px 0px rgb(234, 234, 234);
+    box-shadow: inset 0px 0px 15px 0px rgb(234, 234, 234);
+}
+
+.button-position{
+    padding-bottom: 15px;
+    float: right;
+}
+
+ 
+.send-button{
+    color:white;
+    background-color: #336699;
+    font-size: 20px;
+    padding:12px 20px 12px 20px;
+    font-family: 'Open Sans', sans-serif;
+    border:none;
+    margin-top:10px;
+    margin-right:27px;
+    transition:0.3s;
+    cursor: pointer;  
+}
+
+
+  
+.send-button:hover{
+    color:#666666;
+    background-color: #eaeaea;
+    border:none;
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(51,102,153,1);
+    -moz-box-shadow: inset 0px 0px 0px 3px rgba(51,102,153,1);
+    box-shadow: inset 0px 0px 0px 3px rgba(51,102,153,1);
+}
+
+
+
+
+
+/* Messages and errors styling*/
+
+.user-info, .error-message, .inserted{
+     font-family: 'Open Sans', sans-serif;
+     font-size: 25px;
+     color:white;
+     text-align:center; 
+     padding: 20px;
+ }
+
+
+
+ 
+/* Tables styling*/
+ 
+/*Solution with tables styling taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_responsive*/
+
+ #table-style tr, th{
+    background-color: rgba(234, 234, 234, 0.4); 
+}
+
+
+#table-style tr{
+    background-color: rgba(234, 234, 234, 0.2); 
+    }
+
+
+#table-style tr:nth-child(even){
+    background-color: rgba(234, 234, 234, 0.3); 
+}
+
+
+
+#table-style{
+   margin: auto; 
+   counter-reset: rowNumber;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   border:1px solid #eaeaea;
+   color:white;
+}
+ 
+/* Solution with counting taken from 
+https://stackoverflow.com/questions/25248005/css-auto-numbers-for-table-rows-not-first */
+
+ #table-style td{
+    counter-increment: rowNumber; 
+ }
+ 
+ #table-style tr td:first-child::before{ 
+     content:counter(rowNumber)".";
+ }
+
+ 
+ 
+ #table-style th, td {
+     padding: 10px;
+ } 
+ 
+ 
+ 
+ 
+ 
+ @media (max-width: 780px){
+     .send-button{
+         font-size: 14px;
+         padding:6px 10px 6px 10px;
+     }
+     
+     
+     .form-note{
+         width:80%; 
+     }
+     .form-content{
+         width:40%;
+     }
+     
+ }
+
+ 
+ 
+@media (max-width: 600px){
+    .button-position{
+      left: 0px;
+      margin-left: 27px;
+      margin-right: 27px;
+      float:none; 
+}   
+    
+.send-button{
+    width: 100%;
+    font-size: 20px;
+    padding:12px 20px 12px 20px;
+}
+
+.form-content, .form-content2{
+    margin-bottom:15px; 
+    display: block; 
+    width:auto;}
+
+    
+
+.form-text{
+display:none;
+}
+
+.form-note{
+    width: 100%;
+}
+
+#header{
+    font-size: 2em;
+}
+
+.login, .password, .note{
+    text-align:center; 
+}
+
+
+#table-style{
+    font-size:15px; 
+}
+
+#table-style th, td {
+     padding: 5px;
+ } 
+
+ .user-info, .error-message, .inserted{
+   font-size: 15px;
+   padding: 5px;  
+ }
+ 
+}
